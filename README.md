@@ -1,6 +1,39 @@
 # cpluscplus_package
 environnement de travail pour l'installation des outils, logiciel, librairie c++ 
-# install Eigen3 Eigen 3.4.0 with spack
+# Installing Sphinx
+>Linux: Install either python3-sphinx using apt-get:
+apt-get install python3-sphinx
+(see [this](https://www.sphinx-doc.org/en/master/usage/installation.html)) for sphinx web site
+
+```cmake
+#find_package(Sphinx)
+find_program(SPHINX_EXECUTABLE sphinx-build)
+if (SPHINX_EXECUTABLE)
+  set(SPHINX_FOUND TRUE)
+endif()
+
+if (SPHINX_FOUND)
+  message(STATUS "Found Sphinx: ${SPHINX_EXECUTABLE}")
+else()
+  message(STATUS "Sphinx not found.")
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(Sphinx DEFAULT_MSG SPHINX_EXECUTABLE)
+FIND_PROGRAM(SPHINX_EXE NAMES sphinx-build)
+```
+> a simple **Makefile** to generate a doc with **Sphinx** :wrench:
+```Makefile
+SPHINXBUILD = sphinx-build
+SOURCEDIR = .
+BUILDDIR = build
+html:
+	$(SPHINXBUILD) -b html $(SOURCEDIR) $(BUILDDIR)/html
+clean:
+	rm -rf $(BUILDDIR)
+```
+> **_NOTE:_  :pencil2:**  sphinx-build -b html . build/html and don't forget to add the path to SPHINX_EXE et/ou SPHINX_EXECUTABLE to `/usr/bin/sphinx-build`
+# installing Eigen3 Eigen 3.4.0 with spack
 
 ```cmake
 #
