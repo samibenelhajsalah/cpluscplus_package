@@ -3,6 +3,23 @@ add_compile_options(-O2)
 project(monprojet)
 #add_executable(monprojet main.cpp)
 
+#
+# Eigen3
+#
+#find_package(Eigen3 3.4.0)
+SET(EIGEN3_INCLUDE_DIR "$ENV{EIGEN3_INCLUDE_DIR}")
+IF (NOT EIGEN3_INCLUDE_DIR)
+    MESSAGE(FATAL_ERROR "Please point the environment variable EIGEN3_INCLUDE_DIR
+                        to the include directory of your Eigen3 installation.")
+ENDIF ()
+INCLUDE_DIRECTORIES("${EIGEN3_INCLUDE_DIR}")
+# DISABLE OpenMP multithreading if it's enable inside EIGEN
+add_definitions(-DEIGEN_DONT_PARALLELIZE)
+message(
+        STATUS "\n-------------------------------------------------------")
+
+message(STATUS "EIGEN3 . INCLUDE : ${EIGEN3_INCLUDE_DIR}")
+
 #find_package(Sphinx)
 find_program(SPHINX_EXECUTABLE sphinx-build)
 if (SPHINX_EXECUTABLE)
@@ -22,7 +39,8 @@ find_package(Boost 1.80.0 REQUIRED COMPONENTS unit_test_framework)
 
 set(cpp_sources
     main.cpp
-    boost_test.cpp)
+    boost_test.cpp
+    eigen.cpp)
 
 foreach(cpp_file ${cpp_sources})
   # Obtient le nom du fichier source sans l'extension
