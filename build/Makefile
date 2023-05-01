@@ -117,24 +117,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named monprojet
+# Target rules for targets named main
 
 # Build rule for target.
-monprojet: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monprojet
-.PHONY : monprojet
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-monprojet/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monprojet.dir/build.make CMakeFiles/monprojet.dir/build
-.PHONY : monprojet/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named boost_test
+
+# Build rule for target.
+boost_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost_test
+.PHONY : boost_test
+
+# fast build rule for target.
+boost_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_test.dir/build.make CMakeFiles/boost_test.dir/build
+.PHONY : boost_test/fast
+
+boost_test.o: boost_test.cpp.o
+.PHONY : boost_test.o
+
+# target to build an object file
+boost_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_test.dir/build.make CMakeFiles/boost_test.dir/boost_test.cpp.o
+.PHONY : boost_test.cpp.o
+
+boost_test.i: boost_test.cpp.i
+.PHONY : boost_test.i
+
+# target to preprocess a source file
+boost_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_test.dir/build.make CMakeFiles/boost_test.dir/boost_test.cpp.i
+.PHONY : boost_test.cpp.i
+
+boost_test.s: boost_test.cpp.s
+.PHONY : boost_test.s
+
+# target to generate assembly for a file
+boost_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boost_test.dir/build.make CMakeFiles/boost_test.dir/boost_test.cpp.s
+.PHONY : boost_test.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monprojet.dir/build.make CMakeFiles/monprojet.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +179,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monprojet.dir/build.make CMakeFiles/monprojet.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +187,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monprojet.dir/build.make CMakeFiles/monprojet.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... monprojet"
+	@echo "... boost_test"
+	@echo "... main"
+	@echo "... boost_test.o"
+	@echo "... boost_test.i"
+	@echo "... boost_test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
