@@ -11,4 +11,5 @@ int main()
   m(0,1) = -1;
   m(1,1) = m(1,0) + m(0,1);
   std::cout << m << std::endl;
+  std::cout << " --> faut faire attention a l include de Dense !\n --> verifie bien le bon chemin" <<std::endl;
 }
