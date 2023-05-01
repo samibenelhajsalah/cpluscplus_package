@@ -8,6 +8,7 @@ environnement de travail pour l'installation des outils, logiciel, librairie c++
 #
 #find_package(Eigen3 3.4.0) # a tester
 #cette commande va ajouter la variable "Eigen3_DIR
+#/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/eigen-3.4.0-dls4c4jv4m6rgme4fatksjizyj6gh5ld/share/eigen3/cmake
 SET(EIGEN3_INCLUDE_DIR "$ENV{EIGEN3_INCLUDE_DIR}")
 IF (NOT EIGEN3_INCLUDE_DIR)
     MESSAGE(FATAL_ERROR "Please point the environment variable EIGEN3_INCLUDE_DIR
