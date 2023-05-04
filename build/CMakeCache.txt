@@ -14,6 +14,17 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/boost-1.80.0-oliu3c246235puwrnh26fafwmvhfijnq/lib/cmake/Boost-1.80.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/boost-1.80.0-oliu3c246235puwrnh26fafwmvhfijnq/include
+
+//Boost unit_test_framework library (debug)
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG:FILEPATH=Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG-NOTFOUND
+
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE:STRING=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/boost-1.80.0-oliu3c246235puwrnh26fafwmvhfijnq/lib/libboost_unit_test_framework.so.1.80.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -32,11 +43,11 @@ CMAKE_CXX_COMPILER:STRING=/home/sami/Documents/travail/spack/opt/spack/linux-ubu
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
+CMAKE_CXX_COMPILER_AR:FILEPATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/gcc-11.3.0-y7fvegp5hdy5kis3zz4z45ga3fhq4czz/bin/gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/gcc-11.3.0-y7fvegp5hdy5kis3zz4z45ga3fhq4czz/bin/gcc-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -212,6 +223,27 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//No help, variable specified on the command line.
+EIGEN3_INCLUDE_DIR:UNINITIALIZED=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/eigen-3.4.0-dls4c4jv4m6rgme4fatksjizyj6gh5ld/include
+
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/eigen-3.4.0-dls4c4jv4m6rgme4fatksjizyj6gh5ld/share/eigen3/cmake
+
+//Path to a program.
+SPHINX_EXE:FILEPATH=/usr/bin/sphinx-build
+
+//Path to a program.
+SPHINX_EXECUTABLE:FILEPATH=/usr/bin/sphinx-build
+
+//The directory containing a CMake configuration file for Sphinx.
+Sphinx_DIR:PATH=Sphinx_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/boost-1.80.0-oliu3c246235puwrnh26fafwmvhfijnq/lib/cmake/boost_headers-1.80.0
+
+//The directory containing a CMake configuration file for boost_unit_test_framework.
+boost_unit_test_framework_DIR:PATH=/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/boost-1.80.0-oliu3c246235puwrnh26fafwmvhfijnq/lib/cmake/boost_unit_test_framework-1.80.0
+
 //Value Computed by CMake
 monprojet_BINARY_DIR:STATIC=/home/sami/Documents/travail/sami_project/cpluscplus_package/build
 
@@ -226,6 +258,14 @@ monprojet_SOURCE_DIR:STATIC=/home/sami/Documents/travail/sami_project/cpluscplus
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: Boost_DIR
+Boost_DIR-MODIFIED:INTERNAL=ON
+//ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -250,8 +290,12 @@ CMAKE_CTEST_COMMAND:INTERNAL=/home/sami/Documents/travail/spack/opt/spack/linux-
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
 CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: CMAKE_CXX_COMPILER_AR
+CMAKE_CXX_COMPILER_AR-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
 CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: CMAKE_CXX_COMPILER_RANLIB
+CMAKE_CXX_COMPILER_RANLIB-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -328,7 +372,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -371,6 +415,16 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: Eigen3_DIR
+Eigen3_DIR-MODIFIED:INTERNAL=ON
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/home/sami/Documents/travail/spack/opt/spack/linux-ubuntu22.04-ivybridge/gcc-11.3.0/boost-1.80.0-oliu3c246235puwrnh26fafwmvhfijnq/lib/cmake/Boost-1.80.0/BoostConfig.cmake][cfound components: unit_test_framework ][v1.80.0(1.80.0)]
+//Details about finding Sphinx
+FIND_PACKAGE_MESSAGE_DETAILS_Sphinx:INTERNAL=[/usr/bin/sphinx-build][v()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_unit_test_framework_DIR
+boost_unit_test_framework_DIR-ADVANCED:INTERNAL=1
 

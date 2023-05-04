@@ -59,3 +59,10 @@ endforeach(cpp_file)
 
 # Créer une cible exécutable pour le projet
 #add_executable(main ${PROJECT_NAME} ${SOURCES})
+
+# Création du dossier tests
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../tests")
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
+add_subdirectory("tests" "${CMAKE_CURRENT_SOURCE_DIR}/tests")
+
+message(STATUS "Répertoire binaire courant: ${CMAKE_CURRENT_BINARY_DIR}")
