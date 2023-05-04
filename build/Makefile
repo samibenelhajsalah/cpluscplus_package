@@ -156,17 +156,30 @@ eigen/fast:
 .PHONY : eigen/fast
 
 #=============================================================================
-# Target rules for targets named main1
+# Target rules for targets named boost_test_2
 
 # Build rule for target.
-main1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main1
-.PHONY : main1
+boost_test_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost_test_2
+.PHONY : boost_test_2
 
 # fast build rule for target.
-main1/fast:
-	$(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build
-.PHONY : main1/fast
+boost_test_2/fast:
+	$(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build
+.PHONY : boost_test_2/fast
+
+#=============================================================================
+# Target rules for targets named boost_test_1
+
+# Build rule for target.
+boost_test_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 boost_test_1
+.PHONY : boost_test_1
+
+# fast build rule for target.
+boost_test_1/fast:
+	$(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build
+.PHONY : boost_test_1/fast
 
 boost_test.o: boost_test.cpp.o
 .PHONY : boost_test.o
@@ -249,9 +262,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boost_test"
+	@echo "... boost_test_1"
+	@echo "... boost_test_2"
 	@echo "... eigen"
 	@echo "... main"
-	@echo "... main1"
 	@echo "... boost_test.o"
 	@echo "... boost_test.i"
 	@echo "... boost_test.s"

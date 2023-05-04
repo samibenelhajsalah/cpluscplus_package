@@ -117,42 +117,80 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-/home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/rule:
-	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/rule
-.PHONY : /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/rule
+/home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/rule:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/rule
+.PHONY : /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/rule
 
 # Convenience name for target.
-main1: /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/rule
-.PHONY : main1
+boost_test_2: /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/rule
+.PHONY : boost_test_2
 
 # fast build rule for target.
-main1/fast:
-	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build
-.PHONY : main1/fast
+boost_test_2/fast:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build
+.PHONY : boost_test_2/fast
 
-main1.o: main1.cpp.o
-.PHONY : main1.o
+# Convenience name for target.
+/home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/rule:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/rule
+.PHONY : /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/rule
+
+# Convenience name for target.
+boost_test_1: /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/rule
+.PHONY : boost_test_1
+
+# fast build rule for target.
+boost_test_1/fast:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build
+.PHONY : boost_test_1/fast
+
+boost_test_1.o: boost_test_1.cpp.o
+.PHONY : boost_test_1.o
 
 # target to build an object file
-main1.cpp.o:
-	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/main1.cpp.o
-.PHONY : main1.cpp.o
+boost_test_1.cpp.o:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/boost_test_1.cpp.o
+.PHONY : boost_test_1.cpp.o
 
-main1.i: main1.cpp.i
-.PHONY : main1.i
+boost_test_1.i: boost_test_1.cpp.i
+.PHONY : boost_test_1.i
 
 # target to preprocess a source file
-main1.cpp.i:
-	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/main1.cpp.i
-.PHONY : main1.cpp.i
+boost_test_1.cpp.i:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/boost_test_1.cpp.i
+.PHONY : boost_test_1.cpp.i
 
-main1.s: main1.cpp.s
-.PHONY : main1.s
+boost_test_1.s: boost_test_1.cpp.s
+.PHONY : boost_test_1.s
 
 # target to generate assembly for a file
-main1.cpp.s:
-	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/main1.dir/main1.cpp.s
-.PHONY : main1.cpp.s
+boost_test_1.cpp.s:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/boost_test_1.cpp.s
+.PHONY : boost_test_1.cpp.s
+
+boost_test_2.o: boost_test_2.cpp.o
+.PHONY : boost_test_2.o
+
+# target to build an object file
+boost_test_2.cpp.o:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/boost_test_2.cpp.o
+.PHONY : boost_test_2.cpp.o
+
+boost_test_2.i: boost_test_2.cpp.i
+.PHONY : boost_test_2.i
+
+# target to preprocess a source file
+boost_test_2.cpp.i:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/boost_test_2.cpp.i
+.PHONY : boost_test_2.cpp.i
+
+boost_test_2.s: boost_test_2.cpp.s
+.PHONY : boost_test_2.s
+
+# target to generate assembly for a file
+boost_test_2.cpp.s:
+	cd /home/sami/Documents/travail/sami_project/cpluscplus_package/build && $(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_2.dir/boost_test_2.cpp.s
+.PHONY : boost_test_2.cpp.s
 
 # Help Target
 help:
@@ -162,10 +200,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main1"
-	@echo "... main1.o"
-	@echo "... main1.i"
-	@echo "... main1.s"
+	@echo "... boost_test_1"
+	@echo "... boost_test_2"
+	@echo "... boost_test_1.o"
+	@echo "... boost_test_1.i"
+	@echo "... boost_test_1.s"
+	@echo "... boost_test_2.o"
+	@echo "... boost_test_2.i"
+	@echo "... boost_test_2.s"
 .PHONY : help
 
 
