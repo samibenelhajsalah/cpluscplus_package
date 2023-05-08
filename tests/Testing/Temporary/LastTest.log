@@ -1,10 +1,10 @@
-Start testing: May 08 17:21 CEST
+Start testing: May 08 18:44 CEST
 ----------------------------------------------------------
 1/2 Testing: boost_test_2
 1/2 Test: boost_test_2
 Command: "/home/sami/Documents/travail/sami_project/cpluscplus_package/tests/boost_test_2"
 Directory: /home/sami/Documents/travail/sami_project/cpluscplus_package/tests
-"boost_test_2" start time: May 08 17:21 CEST
+"boost_test_2" start time: May 08 18:44 CEST
 Output:
 ----------------------------------------------------------
 Running 2 test cases...
@@ -15,7 +15,7 @@ Running 2 test cases...
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"boost_test_2" end time: May 08 17:21 CEST
+"boost_test_2" end time: May 08 18:44 CEST
 "boost_test_2" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -23,7 +23,7 @@ Test Passed.
 2/2 Test: boost_test_1
 Command: "/home/sami/Documents/travail/sami_project/cpluscplus_package/tests/boost_test_1"
 Directory: /home/sami/Documents/travail/sami_project/cpluscplus_package/tests
-"boost_test_1" start time: May 08 17:21 CEST
+"boost_test_1" start time: May 08 18:44 CEST
 Output:
 ----------------------------------------------------------
 Running 2 test cases...
@@ -34,8 +34,8 @@ Running 2 test cases...
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"boost_test_1" end time: May 08 17:21 CEST
+"boost_test_1" end time: May 08 18:44 CEST
 "boost_test_1" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 08 17:21 CEST
+End testing: May 08 18:44 CEST
