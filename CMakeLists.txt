@@ -37,6 +37,23 @@ find_package_handle_standard_args(Sphinx DEFAULT_MSG SPHINX_EXECUTABLE)
 FIND_PROGRAM(SPHINX_EXE NAMES sphinx-build)
 find_package(Boost 1.80.0 REQUIRED COMPONENTS unit_test_framework)
 
+#include(CheckSymbolExists)
+
+
+
+#find_package(Mumps 5.5.1 REQUIRED)
+# Recherche Mumps
+#find_package(Mumps REQUIRED)
+
+
+# Inclure les fichiers de Mumps
+#include_directories(${MUMPS_INCLUDE_DIRS})
+#link_directories(${MUMPS_LIBRARY_DIRS})
+
+#find_package(MPI REQUIRED)
+
+
+
 set(cpp_sources
     main.cpp
     boost_test.cpp
@@ -66,3 +83,12 @@ message(STATUS "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 add_subdirectory("tests" "${CMAKE_CURRENT_SOURCE_DIR}/tests")
 
 message(STATUS "Répertoire binaire courant: ${CMAKE_CURRENT_BINARY_DIR}")
+
+
+#get_filename_component (PROJECT_PATH "${PROJECT_SOURCE_DIR}" ABSOLUTE CACHE)
+#message(STATUS "Répertoire PROJECT_PATH}: ${PROJECT_PATH}}")
+#list( PREPEND CMAKE_MODULE_PATH  ${PROJECT_PATH}/cmake_module)
+#add_subdirectory(${CMAKE_MODULE_PATH})
+
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_module")
+find_package(Mumps REQUIRED)
