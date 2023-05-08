@@ -7,3 +7,6 @@
 /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir
 /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/edit_cache.dir
 /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/rebuild_cache.dir
+/home/sami/Documents/travail/sami_project/cpluscplus_package/mpi_examples/CMakeFiles/mpi_example_1.dir
+/home/sami/Documents/travail/sami_project/cpluscplus_package/mpi_examples/CMakeFiles/edit_cache.dir
+/home/sami/Documents/travail/sami_project/cpluscplus_package/mpi_examples/CMakeFiles/rebuild_cache.dir

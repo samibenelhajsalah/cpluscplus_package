@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/sami/Documents/travail/sami_project/cpluscplus_package/tests/cmake_install.cmake")
+  include("/home/sami/Documents/travail/sami_project/cpluscplus_package/mpi_examples/cmake_install.cmake")
 
 endif()
 

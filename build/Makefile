@@ -181,6 +181,19 @@ boost_test_1/fast:
 	$(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/tests/CMakeFiles/boost_test_1.dir/build
 .PHONY : boost_test_1/fast
 
+#=============================================================================
+# Target rules for targets named mpi_example_1
+
+# Build rule for target.
+mpi_example_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mpi_example_1
+.PHONY : mpi_example_1
+
+# fast build rule for target.
+mpi_example_1/fast:
+	$(MAKE) $(MAKESILENT) -f /home/sami/Documents/travail/sami_project/cpluscplus_package/mpi_examples/CMakeFiles/mpi_example_1.dir/build.make /home/sami/Documents/travail/sami_project/cpluscplus_package/mpi_examples/CMakeFiles/mpi_example_1.dir/build
+.PHONY : mpi_example_1/fast
+
 boost_test.o: boost_test.cpp.o
 .PHONY : boost_test.o
 
@@ -266,6 +279,7 @@ help:
 	@echo "... boost_test_2"
 	@echo "... eigen"
 	@echo "... main"
+	@echo "... mpi_example_1"
 	@echo "... boost_test.o"
 	@echo "... boost_test.i"
 	@echo "... boost_test.s"

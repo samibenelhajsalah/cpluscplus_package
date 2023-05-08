@@ -92,3 +92,9 @@ message(STATUS "Répertoire binaire courant: ${CMAKE_CURRENT_BINARY_DIR}")
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_module")
 find_package(Mumps REQUIRED)
+
+find_package(MPI REQUIRED)
+
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../mpi_examples")
+#message(STATUS "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
+add_subdirectory("mpi_examples" "${CMAKE_CURRENT_SOURCE_DIR}/mpi_examples")
